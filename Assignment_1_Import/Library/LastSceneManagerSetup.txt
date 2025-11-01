@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/Scenes/ouihfgskl;basdfgklb;srg.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
