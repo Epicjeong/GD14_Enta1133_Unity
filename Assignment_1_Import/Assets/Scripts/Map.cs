@@ -6,6 +6,9 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using Random = UnityEngine.Random;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
 {
@@ -14,11 +17,13 @@ namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
     /// </summary>
     internal class Map : MonoBehaviour
     {
+        const int x = 3, y = 3;
         //Sets size of the map
-        const int x = 20, y = 20;
+        [SerializeField] private RoomBase[] roomPrefabs;
+        [SerializeField] private float roomSize = 1;
         //Initial initialization of rooms on a map
-        //private Room[,] layout;
-        bool exploring;
+        private RoomBase[,] layout;
+        //bool exploring;
         //private Room currentRoom;
 
         //Keeps track of the amount of unique rooms visited
@@ -26,7 +31,7 @@ namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
         public void Start()
         {
             //Sets up the layout of the rooms and the rooms
-            //layout = new Room[3, 0, 3];
+            layout = new RoomBase[x, y];
             //Room room;
 
             for (int i = 0; i < x; i++)
@@ -50,8 +55,10 @@ namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
                 //layout[0, i] = room;
                 for (int j = 0; j < y; j++)
                 {
-                    var mapRoomrep = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                    mapRoomrep.transform.position = new UnityEngine.Vector3(i, 0, j);
+                    Vector3 coords = new Vector3(i * roomSize, 0, j * roomSize);
+                    var roomInstance = Instantiate(roomPrefabs[Random.Range(0, roomPrefabs.Length)], transform);
+                    roomInstance.transform.position = coords;
+                    //roomInstatnce.SetRooms(coords);
                     //Initializes the rooms and the random decision to choose which room
                     //roomType = random.Next(1, 6);
                     //Randomly decides between a treasure or item room
@@ -63,7 +70,7 @@ namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
                     {
                         //room = new ItemRoom(i, 0, j);
                     }
-                    //layout[i, 0, j] = room;
+                    layout[i, j] = roomInstance;
                 }
             }
 
@@ -73,43 +80,29 @@ namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
             {
                 for (int j = 0; j < y; j++)
                 {
-                    //Room? currentRoom = layout[i, j];
+                     RoomBase currentRoom = layout[i, j];
+                     RoomBase north = null, east = null, south = null, west = null;
                     //Links the room to the north
                     if (j > 0)
                     {
-                        //currentRoom.North = layout[i, 0, j - 1];
-                    }
-                    else
-                    {
-                        //currentRoom.North = null;
+                        north = layout[i, j - 1];
                     }
                     //Links east room
                     if (i < 2)
                     {
-                        //currentRoom.East = layout[i + 1, 0, j];
-                    }
-                    else
-                    {
-                        //currentRoom.East = null;
+                        east = layout[i + 1, j];
                     }
                     //Links south room
                     if (j < 2)
                     {
-                        //currentRoom.South = layout[i, 0, j + 1];
-                    }
-                    else
-                    {
-                        //currentRoom.South = null;
+                        south = layout[i, j + 1];
                     }
                     //Links west room
                     if (i > 0)
                     {
-                        //currentRoom.West = layout[i - 1, 0, j];
+                        west = layout[i - 1, j];
                     }
-                    else
-                    {
-                        //currentRoom.West = null;
-                    }
+                    currentRoom.SetRooms(north, east, south, west); 
                 }
             }
         //Creates a 3 by 3 map where the rooms are placed
