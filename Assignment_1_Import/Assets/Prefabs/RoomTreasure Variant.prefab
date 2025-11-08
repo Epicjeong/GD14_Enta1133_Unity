@@ -2140,6 +2140,10 @@ PrefabInstance:
       propertyPath: 'm_SelectedVertices.Array.data[1]'
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 3905956609677551721, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 4255997019042347985, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
       propertyPath: m_Name
       value: RoomTreasure Variant
@@ -3623,7 +3627,7 @@ PrefabInstance:
     - target: {fileID: 8580036979868875942, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
       propertyPath: EastEntry
       value: 
-      objectReference: {fileID: 392021624377243260}
+      objectReference: {fileID: 9218313578247502024}
     - target: {fileID: 8580036979868875942, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
       propertyPath: WestEntry
       value: 
@@ -3631,16 +3635,17 @@ PrefabInstance:
     - target: {fileID: 8580036979868875942, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
       propertyPath: NorthEntry
       value: 
-      objectReference: {fileID: 9218313578247502024}
+      objectReference: {fileID: 3842368258441837938}
     - target: {fileID: 8580036979868875942, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
       propertyPath: SouthEntry
       value: 
-      objectReference: {fileID: 3842368258441837938}
+      objectReference: {fileID: 392021624377243260}
     - target: {fileID: 9202152634170831473, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8580036979868875942, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8538331355887067291, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
@@ -3664,7 +3669,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8538331355887067291, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4606343643967440884}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4255997019042347985, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2047141801911759086}
   m_SourcePrefab: {fileID: 100100000, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
 --- !u!1 &92685222706378630 stripped
 GameObject:
@@ -3676,6 +3684,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 992779882977023076, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
   m_PrefabInstance: {fileID: 628161558731104792}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3722219737751149001 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4255997019042347985, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
+  m_PrefabInstance: {fileID: 628161558731104792}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2047141801911759086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3722219737751149001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e98868a39fe2884e8f8b5f1f7ba0d44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NorthEntry: {fileID: 3842368258441837938}
+  EastEntry: {fileID: 9218313578247502024}
+  SouthEntry: {fileID: 392021624377243260}
+  WestEntry: {fileID: 92685222706378630}
 --- !u!1 &3842368258441837938 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4460103010945621866, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
