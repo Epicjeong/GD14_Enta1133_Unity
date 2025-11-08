@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assignment_1_Import/Assets/Prefabs/WeirdGlue.prefab.meta
 guid: fae8ebeae71d195418659eecfffabca7
+========
+guid: 596cf413a853f6140b801cd26d4d22a0
+>>>>>>>> Stashed changes:Assignment_1_Import/Assets/Prefabs/Gem.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

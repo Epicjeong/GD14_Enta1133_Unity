@@ -40,6 +40,7 @@
     },
     "com.unity.ext.nunit": {
       "version": "2.0.5",
+<<<<<<< Updated upstream:GD14_1133_UnityProject/Packages/packages-lock.json
       "depth": 1,
       "source": "builtin",
       "dependencies": {}
@@ -68,6 +69,18 @@
       "source": "registry",
       "dependencies": {
         "com.unity.modules.uielements": "1.0.0"
+=======
+      "depth": 2,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.ide.visualstudio": {
+      "version": "2.0.25",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.test-framework": "1.1.31"
+>>>>>>> Stashed changes:Assignment_1_Import/Packages/packages-lock.json
       },
       "url": "https://packages.unity.com"
     },
@@ -154,7 +167,11 @@
     },
     "com.unity.test-framework": {
       "version": "1.5.1",
+<<<<<<< Updated upstream:GD14_1133_UnityProject/Packages/packages-lock.json
       "depth": 0,
+=======
+      "depth": 1,
+>>>>>>> Stashed changes:Assignment_1_Import/Packages/packages-lock.json
       "source": "builtin",
       "dependencies": {
         "com.unity.ext.nunit": "2.0.3",

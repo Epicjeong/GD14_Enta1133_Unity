@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assignment_1_Import/Assets/Materials/Handle.mat.meta
 guid: a9684cf00abb1b94c8d92aeb921f171a
+========
+guid: 342585b0277a0c4438b9a5c6a5359102
+>>>>>>>> Stashed changes:Assignment_1_Import/Assets/Materials/Gem.mat.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000

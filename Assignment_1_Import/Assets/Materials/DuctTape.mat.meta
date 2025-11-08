@@ -1,12 +1,21 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 <<<<<<<< Updated upstream:Assignment_1_Import/Library/PackageCache/com.unity.probuilder@9b6693f09f97/Content/Resources/Materials/FacePicker.mat.meta
 guid: 5695904020f064fdab5ad265b274a616
+=======
+<<<<<<<< Updated upstream:Assignment_1_Import/Assets/Materials/Glass.mat.meta
+guid: a8ca836785d38a54995ad78fb54e2296
+>>>>>>> Stashed changes
 ========
 guid: 76317f31860e82e42b6e5f851d6d133b
 >>>>>>>> Stashed changes:Assignment_1_Import/Assets/Materials/DuctTape.mat.meta
 NativeFormatImporter:
   externalObjects: {}
+<<<<<<< Updated upstream
   mainObjectFileID: 0
+=======
+  mainObjectFileID: 2100000
+>>>>>>> Stashed changes
   userData: 
   assetBundleName: 
   assetBundleVariant: 
