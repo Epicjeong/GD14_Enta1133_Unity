@@ -1,8 +1,12 @@
 fileFormatVersion: 2
-guid: bb125601775f5bc4f9b8024b19b5863c
+<<<<<<<< HEAD:Assignment_1_Import/Library/PackageCache/com.unity.inputsystem@978211393e28/Samples~/InputDeviceTester/InputDeviceTester.asset.meta
+guid: 5c4222eac5d064f888b070a9269a9150
+========
+guid: 952d64618eaefde4cb7629c4f7987cbb
+>>>>>>>> lab-10:Assignment_1_Import/Assets/Materials/rock_face_03_diff_1k.mat.meta
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 2100000
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

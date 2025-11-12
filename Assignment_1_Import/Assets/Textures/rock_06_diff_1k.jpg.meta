@@ -11,7 +11,7 @@ TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
->>>>>>>> lab-9:Assignment_1_Import/Assets/Textures/rock_06_diff_1k.jpg.meta
+>>>>>>>> lab-10:Assignment_1_Import/Assets/Textures/rock_06_diff_1k.jpg.meta
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
@@ -55,7 +55,7 @@ TextureImporter:
     wrapV: 0
     wrapW: 0
   nPOTScale: 1
->>>>>>>> lab-9:Assignment_1_Import/Assets/Textures/rock_06_diff_1k.jpg.meta
+>>>>>>>> lab-10:Assignment_1_Import/Assets/Textures/rock_06_diff_1k.jpg.meta
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
@@ -84,7 +84,7 @@ TextureImporter:
 ========
   swizzle: 50462976
   cookieLightType: 0
->>>>>>>> lab-9:Assignment_1_Import/Assets/Textures/rock_06_diff_1k.jpg.meta
+>>>>>>>> lab-10:Assignment_1_Import/Assets/Textures/rock_06_diff_1k.jpg.meta
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
@@ -118,7 +118,7 @@ TextureImporter:
 ========
   - serializedVersion: 4
     buildTarget: Android
->>>>>>>> lab-9:Assignment_1_Import/Assets/Textures/rock_06_diff_1k.jpg.meta
+>>>>>>>> lab-10:Assignment_1_Import/Assets/Textures/rock_06_diff_1k.jpg.meta
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -136,7 +136,7 @@ TextureImporter:
 ========
   - serializedVersion: 4
     buildTarget: WebGL
->>>>>>>> lab-9:Assignment_1_Import/Assets/Textures/rock_06_diff_1k.jpg.meta
+>>>>>>>> lab-10:Assignment_1_Import/Assets/Textures/rock_06_diff_1k.jpg.meta
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1

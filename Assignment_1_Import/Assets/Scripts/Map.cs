@@ -19,10 +19,10 @@ namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
     {
         const int x = 3, y = 3;
         //Sets size of the map
-        [SerializeField] private RoomBase[] roomPrefabs;
+        [SerializeField] public RoomBase[] roomPrefabs;
         [SerializeField] private float roomSize = 1;
         //Initial initialization of rooms on a map
-        private RoomBase[,] layout;
+        public RoomBase[,] layout;
         //bool exploring;
         //private Room currentRoom;
 
@@ -245,5 +245,7 @@ namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
         //        currentRoom.hasVisited = true;
         //        currentRoom.OnRoomEntered(player, rock, random, diceroller, scoreKeep, endGame, map);
             }
+
+
     }
 }

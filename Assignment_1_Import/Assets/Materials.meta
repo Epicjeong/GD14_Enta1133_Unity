@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assignment_1_Import/Assets/Scripts.meta
-guid: 54353389733bb774695e0f02882fa5cf
+<<<<<<<< HEAD:Assignment_1_Import/Library/PackageCache/com.unity.inputsystem@978211393e28/InputSystem/Editor/Settings.meta
+guid: c189b798c1d4842fcb189cf619033d39
 ========
-guid: f02b606b0bbac42c8a6a1e3ba4501fb1
->>>>>>>> lab-9:Assignment_1_Import/Assets/Materials.meta
+guid: efbc4abfcace30f429bd27927ee3bc2c
+>>>>>>>> lab-10:Assignment_1_Import/Assets/Materials.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
