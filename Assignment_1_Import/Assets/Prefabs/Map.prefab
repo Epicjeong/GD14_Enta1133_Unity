@@ -45,6 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPrefabs:
+<<<<<<< HEAD
   - {fileID: -279983135502050082, guid: d571ebb19a53827459f72df9320125a9, type: 3}
   - {fileID: 2047141801911759086, guid: 1849430fb6123024eacfacf45e3cd0e8, type: 3}
+=======
+  - {fileID: 4891903889746690548, guid: d571ebb19a53827459f72df9320125a9, type: 3}
+  - {fileID: 9197977375142682302, guid: 1849430fb6123024eacfacf45e3cd0e8, type: 3}
+>>>>>>> parent of 8d033c5 (Revert "Merge branch 'lab-10'")
   roomSize: 35
