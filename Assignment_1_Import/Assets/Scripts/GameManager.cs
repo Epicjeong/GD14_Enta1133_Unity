@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
         UnityEngine.Debug.Log("oihdsfuhagh");
         transform.position = Vector3.zero;
         SetupMap();
+        SpawnPlayer();
 
     //    //Welcomes the player and creates and the instance of the player's class, which asks the players name
     //    Debug.Log("Welcome, I am Yuri Jeong writing this at September 23, 2025. I would ask your name, but I cant do that at the moment");
@@ -80,7 +81,7 @@ public class GameManager : MonoBehaviour
         Debug.Log(" a ");
         var randomStartRoom = gameMap.layout[Random.Range(0, gameMap.roomPrefabs.Length), Random.Range(gameMap.roomPrefabs.Length, 0)];
         playerController = Instantiate(PlayerPrefab, transform);
-        playerController.transform.position = new Vector3(randomStartRoom.transform.position.x, 0, randomStartRoom.transform.position.y);
+        playerController.transform.position = new Vector3(randomStartRoom.transform.position.x, 0, randomStartRoom.transform.position.z);
     }
 
     // Update is called once per frame
