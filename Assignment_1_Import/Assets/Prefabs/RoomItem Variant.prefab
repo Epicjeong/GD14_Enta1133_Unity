@@ -2536,6 +2536,14 @@ PrefabInstance:
       propertyPath: 'm_SelectedVertices.Array.data[1]'
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3173074585854635022, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ed2685d284a486c4f863deea97441b62, type: 2}
+    - target: {fileID: 3814426243319282676, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ed2685d284a486c4f863deea97441b62, type: 2}
     - target: {fileID: 3905956609677551721, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
       propertyPath: m_LocalScale.x
       value: 35
@@ -2544,6 +2552,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoomItem Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5183744631644409072, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4dba551be960f8d42a452d7a1836002c, type: 2}
     - target: {fileID: 6230115851122820216, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
       propertyPath: m_UnmodifiedMeshVersion
       value: 6068

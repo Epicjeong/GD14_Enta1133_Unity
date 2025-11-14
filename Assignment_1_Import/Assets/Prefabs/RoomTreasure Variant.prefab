@@ -173,7 +173,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 952d64618eaefde4cb7629c4f7987cbb, type: 2}
+  - {fileID: 2100000, guid: ed2685d284a486c4f863deea97441b62, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -281,7 +281,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 952d64618eaefde4cb7629c4f7987cbb, type: 2}
+  - {fileID: 2100000, guid: ed2685d284a486c4f863deea97441b62, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -389,7 +389,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 952d64618eaefde4cb7629c4f7987cbb, type: 2}
+  - {fileID: 2100000, guid: 4dba551be960f8d42a452d7a1836002c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -497,7 +497,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 952d64618eaefde4cb7629c4f7987cbb, type: 2}
+  - {fileID: 2100000, guid: 4dba551be960f8d42a452d7a1836002c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -605,7 +605,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 952d64618eaefde4cb7629c4f7987cbb, type: 2}
+  - {fileID: 2100000, guid: 4dba551be960f8d42a452d7a1836002c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -713,7 +713,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 952d64618eaefde4cb7629c4f7987cbb, type: 2}
+  - {fileID: 2100000, guid: ed2685d284a486c4f863deea97441b62, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2140,6 +2140,14 @@ PrefabInstance:
       propertyPath: 'm_SelectedVertices.Array.data[1]'
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 3173074585854635022, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4dba551be960f8d42a452d7a1836002c, type: 2}
+    - target: {fileID: 3814426243319282676, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ed2685d284a486c4f863deea97441b62, type: 2}
     - target: {fileID: 3905956609677551721, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
       propertyPath: m_LocalScale.x
       value: 35
@@ -2148,6 +2156,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoomTreasure Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5183744631644409072, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ed2685d284a486c4f863deea97441b62, type: 2}
     - target: {fileID: 7923619689191360975, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
