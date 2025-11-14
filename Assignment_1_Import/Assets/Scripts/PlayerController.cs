@@ -22,26 +22,44 @@ public class PlayerController : MonoBehaviour
     private Quaternion previousRotation;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Setup()
+    public void Setup()
     {
         Direction[] directions = new Direction[] { Direction.North, Direction.East, Direction.South, Direction.West };
         facingDirection = directions[UnityEngine.Random.Range(0, directions.Length)];
+        SetFacingDirection();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Quaternion currentRotation = Quaternion.Lerp(
-        previousRotation,
-        Quaternion.Euler(new Vector3(0, rotationByDirection[facingDirection])),
-        rotationTimer / Time.deltaTime);
-        transform.rotation = currentRotation;
-        if (rotationTimer > rotationTime)
+        if (isRotating)
         {
-            isRotating = false;
-            rotationTimer = 0.0f;
-
+            Quaternion currentRotation = Quaternion.Lerp(
+                previousRotation,
+                Quaternion.Euler(new Vector3(0, rotationByDirection[facingDirection])),
+                rotationTimer / Time.deltaTime);
+            transform.rotation = currentRotation;
+            if (rotationTimer > rotationTime)
+            {
+                isRotating = false;
+                rotationTimer = 0.0f;
+                SetFacingDirection();
+            }
         }
+        else
+        {
+            bool rotateRight = Input.GetKeyDown(KeyCode.D);
+            bool rotateLeft = Input.GetKeyDown(KeyCode.A);
+            if (rotateRight && !rotateLeft)
+            {
+                TurnRight();
+            }
+            else if (!rotateRight && rotateLeft)
+            {
+                TurnLeft();
+            }
+        }
+        
     }
 
     private void SetFacingDirection()
@@ -67,6 +85,7 @@ public class PlayerController : MonoBehaviour
                 facingDirection = Direction.North;
                 break;
         }
+        StartRotating();
     }
     void TurnRight()
     {
@@ -85,11 +104,13 @@ public class PlayerController : MonoBehaviour
                 facingDirection = Direction.South;
                 break;
         }
+        StartRotating();
     }
 
     private void StartRotating()
     {
-
+        previousRotation = transform.rotation;
+        isRotating = true;
     }
 
     public void OnMove(InputValue value)

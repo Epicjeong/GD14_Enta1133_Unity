@@ -74,14 +74,16 @@ public class GameManager : MonoBehaviour
     {
         gameMap = Instantiate(gameMapPrefab, transform);
         gameMap.transform.position = Vector3.zero;
+        gameMap.MakeMap();
     }
 
     private void SpawnPlayer()
     {
         Debug.Log(" a ");
-        var randomStartRoom = gameMap.layout[Random.Range(0, gameMap.roomPrefabs.Length), Random.Range(gameMap.roomPrefabs.Length, 0)];
+        var randomStartRoom = gameMap.layout[Random.Range(0, gameMap.roomPrefabs.Length), Random.Range(0, gameMap.roomPrefabs.Length)];
         playerController = Instantiate(PlayerPrefab, transform);
         playerController.transform.position = new Vector3(randomStartRoom.transform.position.x, 0, randomStartRoom.transform.position.z);
+        playerController.Setup();
     }
 
     // Update is called once per frame

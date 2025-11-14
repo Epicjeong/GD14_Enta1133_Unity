@@ -30,81 +30,7 @@ namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
         int roomsUsed;
         public void Start()
         {
-            //Sets up the layout of the rooms and the rooms
-            layout = new RoomBase[x, y];
-            //Room room;
-
-            for (int i = 0; i < x; i++)
-            {
-                //Initializes the rooms and the random decision to choose which room
-                //int roomType = random.Next(1, 133);
-                int roomType = 66;
-                //Randomly decides between a treasure or item room
-                if (roomType > 66)
-                {
-                    //room = new TreasureRoom(0, 0, i);
-                }
-                else if (roomType < 66)
-                {
-                    //room = new ItemRoom(0, 0, i);
-                }
-                else
-                {
-                    //room = new Man(0, 0, i);
-                }
-                //layout[0, i] = room;
-                for (int j = 0; j < y; j++)
-                {
-                    Vector3 coords = new Vector3(i * roomSize, 0, j * roomSize);
-                    var roomInstance = Instantiate(roomPrefabs[Random.Range(0, roomPrefabs.Length)], transform);
-                    roomInstance.transform.position = coords;
-                    //roomInstatnce.SetRooms(coords);
-                    //Initializes the rooms and the random decision to choose which room
-                    //roomType = random.Next(1, 6);
-                    //Randomly decides between a treasure or item room
-                    if (roomType >= 3)
-                    {
-                        //room = new TreasureRoom(i, 0, j);
-                    }
-                    else
-                    {
-                        //room = new ItemRoom(i, 0, j);
-                    }
-                    layout[i, j] = roomInstance;
-                }
-            }
-
-
-            //Link rooms together so you can move between them
-            for (int i = 0; i < x; i++)
-            {
-                for (int j = 0; j < y; j++)
-                {
-                     RoomBase currentRoom = layout[i, j];
-                     RoomBase north = null, east = null, south = null, west = null;
-                    //Links the room to the north
-                    if (j > 0)
-                    {
-                        north = layout[i, j - 1];
-                    }
-                    //Links east room
-                    if (i < 2)
-                    {
-                        east = layout[i + 1, j];
-                    }
-                    //Links south room
-                    if (j < 2)
-                    {
-                        south = layout[i, j + 1];
-                    }
-                    //Links west room
-                    if (i > 0)
-                    {
-                        west = layout[i - 1, j];
-                    }
-                    currentRoom.SetRooms(north, east, south, west); 
-                }
-            }
+            
         //Creates a 3 by 3 map where the rooms are placed
         //    internal void CreateMap(int selection,int direction, Player player, Rock rock, Random random, DiceRolls diceroller, ScoreKeeper scoreKeep, EndGame endGame, Map map)
         //    {
@@ -246,6 +172,83 @@ namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
         //        currentRoom.OnRoomEntered(player, rock, random, diceroller, scoreKeep, endGame, map);
             }
 
+        public void MakeMap()
+        {
+            //Sets up the layout of the rooms and the rooms
+            layout = new RoomBase[x, y];
+            //Room room;
 
+            for (int i = 0; i < x; i++)
+            {
+                //Initializes the rooms and the random decision to choose which room
+                //int roomType = random.Next(1, 133);
+                int roomType = 66;
+                //Randomly decides between a treasure or item room
+                if (roomType > 66)
+                {
+                    //room = new TreasureRoom(0, 0, i);
+                }
+                else if (roomType < 66)
+                {
+                    //room = new ItemRoom(0, 0, i);
+                }
+                else
+                {
+                    //room = new Man(0, 0, i);
+                }
+                //layout[0, i] = room;
+                for (int j = 0; j < y; j++)
+                {
+                    Vector3 coords = new Vector3(i * roomSize, 0, j * roomSize);
+                    var roomInstance = Instantiate(roomPrefabs[Random.Range(0, roomPrefabs.Length)], transform);
+                    roomInstance.transform.position = coords;
+                    //roomInstatnce.SetRooms(coords);
+                    //Initializes the rooms and the random decision to choose which room
+                    //roomType = random.Next(1, 6);
+                    //Randomly decides between a treasure or item room
+                    if (roomType >= 3)
+                    {
+                        //room = new TreasureRoom(i, 0, j);
+                    }
+                    else
+                    {
+                        //room = new ItemRoom(i, 0, j);
+                    }
+                    layout[i, j] = roomInstance;
+                }
+            }
+
+
+            //Link rooms together so you can move between them
+            for (int i = 0; i < x; i++)
+            {
+                for (int j = 0; j < y; j++)
+                {
+                    RoomBase currentRoom = layout[i, j];
+                    RoomBase north = null, east = null, south = null, west = null;
+                    //Links the room to the north
+                    if (j > 0)
+                    {
+                        north = layout[i, j - 1];
+                    }
+                    //Links east room
+                    if (i < 2)
+                    {
+                        east = layout[i + 1, j];
+                    }
+                    //Links south room
+                    if (j < 2)
+                    {
+                        south = layout[i, j + 1];
+                    }
+                    //Links west room
+                    if (i > 0)
+                    {
+                        west = layout[i - 1, j];
+                    }
+                    currentRoom.SetRooms(north, east, south, west);
+                }
+            }
+        }
     }
 }
