@@ -42,7 +42,7 @@ public class ItemRoom : RoomBase
     internal override void OnRoomSearched()
     {
         Debug.Log("There are some items laying around");
-        Debug.Log("Sadly, you cant picke them up yet");
+        Debug.Log("Sadly, you cant pick them up yet");
     }
     //When the room is exited
     internal override void OnRoomExit()

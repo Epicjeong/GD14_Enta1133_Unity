@@ -7,7 +7,7 @@ public abstract class RoomBase : MonoBehaviour
 {
 
     [SerializeField] private GameObject NorthEntry, EastEntry, SouthEntry, WestEntry;
-    private RoomBase north, east, south, west;
+    public RoomBase north, east, south, west;
     //Checks if the room is visited or not
     public bool hasVisited = false;
 

@@ -28,6 +28,12 @@ public class PlayerController : MonoBehaviour
 
     public RoomBase currentRoom = null;
 
+    [SerializeField] private float movementTime = 2.0f;
+    private bool isMoving = false;
+    private float movementTimer = 0.0f;
+    private Vector3 previousPosition;
+    private Vector3 moveToPosition;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Setup()
     {
@@ -40,6 +46,21 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isMoving)
+        {
+            Vector3 currentPosition = Vector3.Slerp(previousPosition, moveToPosition, movementTimer / movementTime);
+            transform.position = currentPosition;
+            movementTimer += Time.deltaTime;
+            Debug.Log("oihasdf");
+
+            if (movementTimer > movementTime)
+            {
+                isMoving = false;
+                movementTimer = 0.0f;
+                transform.position = moveToPosition;
+            }
+        }
+
         if (isRotating)
         {
             Quaternion currentRotation = Quaternion.Lerp(
@@ -72,6 +93,14 @@ public class PlayerController : MonoBehaviour
                 if (currentRoom != null)
                 {
                     currentRoom.OnRoomSearched();
+                }
+            }
+            else if (Input.GetKeyDown (KeyCode.W))
+            {
+                RoomBase roomInFacingDirection = NextRoomInDirection();
+                if (roomInFacingDirection != null)
+                {
+                    StartMovement(roomInFacingDirection);
                 }
             }
         }
@@ -129,6 +158,34 @@ public class PlayerController : MonoBehaviour
         isRotating = true;
     }
 
+    private void StartMovement(RoomBase targetRoom)
+    {
+        previousPosition = transform.position;
+        moveToPosition = targetRoom.transform.position;
+        isMoving = true;
+    }
+    private RoomBase NextRoomInDirection()
+    {
+        if (currentRoom == null)
+        {
+            return null;
+        }
+
+        switch (facingDirection)
+        {
+            case Direction.North:
+                return currentRoom.north;
+            case Direction.East:
+                return currentRoom.east;
+            case Direction.South:
+                return currentRoom.south;
+            case Direction.West:
+                return currentRoom.west;
+            default:
+                Debug.Log("Please input a valid option");
+                return null;
+        }
+    }
     public void OnMove(InputValue value)
     {
         MoveInput(value.Get<Vector2>());
