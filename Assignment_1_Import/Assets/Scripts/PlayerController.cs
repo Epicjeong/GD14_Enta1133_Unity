@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
         Direction[] directions = new Direction[] { Direction.North, Direction.East, Direction.South, Direction.West };
         facingDirection = directions[UnityEngine.Random.Range(0, directions.Length)];
         SetFacingDirection();
+        Debug.Log("Sadasd");
     }
 
     // Update is called once per frame
@@ -39,6 +40,7 @@ public class PlayerController : MonoBehaviour
                 Quaternion.Euler(new Vector3(0, rotationByDirection[facingDirection])),
                 rotationTimer / Time.deltaTime);
             transform.rotation = currentRotation;
+            rotationTimer += Time.deltaTime;
             if (rotationTimer > rotationTime)
             {
                 isRotating = false;
@@ -123,6 +125,17 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Enter");
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        Debug.Log("stay");
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        Debug.Log("lev");
+    }
 
 }

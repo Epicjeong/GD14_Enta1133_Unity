@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
         Debug.Log(" a ");
         var randomStartRoom = gameMap.layout[Random.Range(0, gameMap.roomPrefabs.Length), Random.Range(0, gameMap.roomPrefabs.Length)];
         playerController = Instantiate(PlayerPrefab, transform);
-        playerController.transform.position = new Vector3(randomStartRoom.transform.position.x, 0, randomStartRoom.transform.position.z);
+        playerController.transform.position = new Vector3(randomStartRoom.transform.position.x, 13, randomStartRoom.transform.position.z);
         playerController.Setup();
     }
 
