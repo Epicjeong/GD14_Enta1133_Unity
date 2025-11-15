@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
     {
         if (isMoving)
         {
-            Vector3 currentPosition = Vector3.Slerp(previousPosition, moveToPosition, movementTimer / movementTime);
+            Vector3 currentPosition = Vector3.Lerp(previousPosition, moveToPosition, movementTimer / movementTime);
             transform.position = currentPosition;
             movementTimer += Time.deltaTime;
             Debug.Log("oihasdf");
@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
 
         if (isRotating)
         {
-            Quaternion currentRotation = Quaternion.Lerp(
+            Quaternion currentRotation = Quaternion.Slerp(
                 previousRotation,
                 Quaternion.Euler(new Vector3(0, rotationByDirection[facingDirection])),
                 rotationTimer / Time.deltaTime);

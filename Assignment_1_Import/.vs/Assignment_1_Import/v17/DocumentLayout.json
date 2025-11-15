@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\assets\\scripts\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|c:\\1133\\gd14_enta1133_unity\\assignment_1_import\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|c:\\1133\\gd14_enta1133_unity\\assignment_1_import\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\assets\\scripts\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\assets\\scripts\\treasureroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,7 +53,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -61,7 +61,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu.cs",
@@ -135,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -143,31 +143,30 @@
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAgwBcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T01:27:13.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T01:27:13.174Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
               "ToolTip": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAASwKMAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAADgv0EAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T01:16:21.708Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Map.cs",
               "DocumentMoniker": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\Map.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Map.cs",
               "ToolTip": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\Map.cs",
               "RelativeToolTip": "Assets\\Scripts\\Map.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAAAAAPoAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAqwPoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T01:16:14.19Z",
               "EditorCaption": ""
