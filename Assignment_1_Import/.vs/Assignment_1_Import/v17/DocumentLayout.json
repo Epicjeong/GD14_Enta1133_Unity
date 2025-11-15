@@ -3,32 +3,42 @@
   "WorkspaceRootPath": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|c:\\1133\\gd14_enta1133_unity\\assignment_1_import\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|c:\\1133\\gd14_enta1133_unity\\assignment_1_import\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|c:\\1133\\gd14_enta1133_unity\\assignment_1_import\\assets\\scripts\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|c:\\1133\\gd14_enta1133_unity\\assignment_1_import\\assets\\scripts\\dicerolls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dicerolls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\assets\\scripts\\gamerunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamerunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\assets\\scripts\\treasureroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\treasureroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\assets\\scripts\\computer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\computer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\assets\\scripts\\itemroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\itemroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\s2533010\\Documents\\GitHub\\enta-1133-class\\GD14_1133_DiceGame_Jeong_Yuri\\Scripts\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\assets\\scripts\\roombase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\roombase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\s2533010\\Documents\\GitHub\\enta-1133-class\\GD14_1133_DiceGame_Jeong_Yuri\\Scripts\\Room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\assets\\scripts\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\assets\\scripts\\gamerunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamerunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +48,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,46 +56,105 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ItemRoom.cs",
+              "DocumentMoniker": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\ItemRoom.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ItemRoom.cs",
+              "ToolTip": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\ItemRoom.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ItemRoom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T01:24:31.21Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TreasureRoom.cs",
+              "DocumentMoniker": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\TreasureRoom.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TreasureRoom.cs",
+              "ToolTip": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\TreasureRoom.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TreasureRoom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T01:24:29.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\s2533010\\Documents\\GitHub\\enta-1133-class\\GD14_1133_DiceGame_Jeong_Yuri\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\s2533010\\Documents\\GitHub\\enta-1133-class\\GD14_1133_DiceGame_Jeong_Yuri\\Scripts\\Player.cs",
+              "ToolTip": "C:\\Users\\s2533010\\Documents\\GitHub\\enta-1133-class\\GD14_1133_DiceGame_Jeong_Yuri\\Scripts\\Player.cs",
+              "RelativeToolTip": "..\\..\\..\\Users\\s2533010\\Documents\\GitHub\\enta-1133-class\\GD14_1133_DiceGame_Jeong_Yuri\\Scripts\\Player.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAFMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T01:21:44.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\s2533010\\Documents\\GitHub\\enta-1133-class\\GD14_1133_DiceGame_Jeong_Yuri\\Scripts\\Room.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\s2533010\\Documents\\GitHub\\enta-1133-class\\GD14_1133_DiceGame_Jeong_Yuri\\Scripts\\Room.cs",
+              "ToolTip": "C:\\Users\\s2533010\\Documents\\GitHub\\enta-1133-class\\GD14_1133_DiceGame_Jeong_Yuri\\Scripts\\Room.cs",
+              "RelativeToolTip": "..\\..\\..\\Users\\s2533010\\Documents\\GitHub\\enta-1133-class\\GD14_1133_DiceGame_Jeong_Yuri\\Scripts\\Room.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T01:18:43.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RoomBase.cs",
+              "DocumentMoniker": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\RoomBase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\RoomBase.cs",
+              "ToolTip": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\RoomBase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\RoomBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T00:28:43.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
               "ToolTip": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwFEAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAgwFQAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T01:27:13.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T01:27:13.174Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
               "ToolTip": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAowHAAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAWwIQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T01:16:21.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T01:16:21.708Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Map.cs",
               "DocumentMoniker": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\Map.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Map.cs",
               "ToolTip": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\Map.cs",
               "RelativeToolTip": "Assets\\Scripts\\Map.cs",
-              "ViewState": "AgIAAKEAAAAAAAAAAAAAwPoAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAANMAAAAAAAAAAAAYwPoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T01:16:14.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T01:16:14.19Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "GameRunner.cs",
               "DocumentMoniker": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\GameRunner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameRunner.cs",
@@ -97,32 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
-              "ToolTip": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\Player.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T21:35:57.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Computer.cs",
-              "DocumentMoniker": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\Computer.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Computer.cs",
-              "ToolTip": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\Computer.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Computer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T21:35:55.047Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "DiceRolls.cs",
               "DocumentMoniker": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\DiceRolls.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DiceRolls.cs",

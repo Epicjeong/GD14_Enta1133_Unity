@@ -1,21 +1,28 @@
+using GD14_1133_DiceGame_Jeong_Yuri;
+using GD14_1133_DiceGame_Jeong_Yuri.Scripts;
 using UnityEngine;
+using Random = System.Random;
 
-public class RoomBase : MonoBehaviour
+public abstract class RoomBase : MonoBehaviour
 {
 
     [SerializeField] private GameObject NorthEntry, EastEntry, SouthEntry, WestEntry;
     private RoomBase north, east, south, west;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    //Checks if the room is visited or not
+    public bool hasVisited = false;
 
-    // Update is called once per frame
-    void Update()
+    //Description for the room
+    internal abstract void RoomDescription();
+    //When the room is entered
+    internal virtual void OnRoomEntered()
     {
-        
+        hasVisited = true;
     }
+    //When the room is searched
+    internal abstract void OnRoomSearched();
+
+    //When the room is exited
+    internal abstract void OnRoomExit();
 
     public void SetRooms(RoomBase roomNorth, RoomBase roomEast, RoomBase roomSouth, RoomBase roomWest)
     {

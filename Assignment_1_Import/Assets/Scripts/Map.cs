@@ -51,8 +51,8 @@ namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
         //    {
         //        while (exploring == true)
         //        {
-        //            Console.WriteLine("What would you like to do? (1 to move to a different room, 2 to search the room you are in, 3 to check your inventory)");
-        //            Console.WriteLine("If you're ready to exit the mine, press 4 instead");
+        //            Debug.Log("What would you like to do? (1 to move to a different room, 2 to search the room you are in, 3 to check your inventory)");
+        //            Debug.Log("If you're ready to exit the mine, press 4 instead");
         //            //Receives input
         //            int.TryParse(Console.ReadLine(), out selection);
         //            switch (selection)
@@ -71,7 +71,7 @@ namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
         //                    endGame.PlayerWin(player, scoreKeep, map);
         //                    break;
         //                default:
-        //                    Console.WriteLine("Please enter a valid option");
+        //                    Debug.Log("Please enter a valid option");
         //                    break;
         //            }
         //            if (currentRoom.hasVisited == true)
@@ -83,11 +83,11 @@ namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
         //            {
         //                if (roomsUsed >= 9)
         //                { 
-        //                Console.WriteLine("You have acquired everything in the mines, and will now leave");
+        //                Debug.Log("You have acquired everything in the mines, and will now leave");
         //                }
         //                else if (player.GetPlayerSidesLeft() <= 0)
         //                {
-        //                    Console.WriteLine("As you are out of durability, you will now leave the mine");
+        //                    Debug.Log("As you are out of durability, you will now leave the mine");
         //                }
         //                exploring = false;
         //                endGame.PlayerWin(player, scoreKeep, map);
@@ -98,8 +98,8 @@ namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
         //    //Moves the player from room to room
         //    internal void MoveFromRoom(int selection, int direction, Player player, Rock rock, Random random, DiceRolls diceroller, ScoreKeeper scoreKeep, EndGame endGame, Map map)
         //    {
-        //        Console.WriteLine("Which direction would you like to move? (1 is north, 2 is east, 3 is south, 4 is west");
-        //        Console.WriteLine("Or press anything else to do something else)");
+        //        Debug.Log("Which direction would you like to move? (1 is north, 2 is east, 3 is south, 4 is west");
+        //        Debug.Log("Or press anything else to do something else)");
         //        //Gets the input that controls where to move
         //        int.TryParse(Console.ReadLine(), out direction);
         //        //Moves to the room north of the current room
@@ -109,7 +109,7 @@ namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
         //                if (currentRoom.North == null)
         //                {
         //                    //If you cant go further north
-        //                    Console.WriteLine("You can not go any further north");
+        //                    Debug.Log("You can not go any further north");
         //                    MoveFromRoom(selection, direction, player, rock, random, diceroller, scoreKeep, endGame, map);
         //                }
         //                else
@@ -123,7 +123,7 @@ namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
         //                if (currentRoom.East == null)
         //                {
         //                    //If you cant
-        //                    Console.WriteLine("You can not go any further east");
+        //                    Debug.Log("You can not go any further east");
         //                    MoveFromRoom(selection, direction, player, rock, random, diceroller, scoreKeep, endGame, map);
         //                }
         //                else
@@ -137,7 +137,7 @@ namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
         //                if (currentRoom.South == null)
         //                {
         //                    //If you cant
-        //                    Console.WriteLine("You can not go any further south");
+        //                    Debug.Log("You can not go any further south");
         //                    MoveFromRoom(selection, direction, player, rock, random, diceroller, scoreKeep, endGame, map);
         //                }
         //                else
@@ -151,7 +151,7 @@ namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
         //                if (currentRoom.West == null)
         //                {
         //                    //If you cant
-        //                    Console.WriteLine("You can not go any further west");
+        //                    Debug.Log("You can not go any further west");
         //                    MoveFromRoom(selection, direction, player, rock, random, diceroller, scoreKeep, endGame, map);
         //                }
         //                else
@@ -166,7 +166,7 @@ namespace GD14_1133_DiceGame_Jeong_Yuri.Scripts
         //    //Resets the current room like it was entered for the first time
         //    internal void ResetRoom(Player player, Rock rock, Random random, DiceRolls diceroller, ScoreKeeper scoreKeep, EndGame endGame, Map map)
         //    {
-        //        Console.WriteLine("The magnifying glass reveals a rock you didnt see");
+        //        Debug.Log("The magnifying glass reveals a rock you didnt see");
         //        roomsUsed--;
         //        currentRoom.hasVisited = true;
         //        currentRoom.OnRoomEntered(player, rock, random, diceroller, scoreKeep, endGame, map);

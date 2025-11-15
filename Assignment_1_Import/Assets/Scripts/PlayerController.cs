@@ -1,10 +1,15 @@
+using GD14_1133_DiceGame_Jeong_Yuri;
+using GD14_1133_DiceGame_Jeong_Yuri.Scripts;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Random = System.Random;
 
 public class PlayerController : MonoBehaviour
 {
+
     public Vector2 Move;
     private Dictionary<Direction, int> rotationByDirection = new()
     {
@@ -20,6 +25,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float rotationTime = 0.5f;
     private float rotationTimer = 0.0f;
     private Quaternion previousRotation;
+
+    public RoomBase currentRoom = null;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Setup()
@@ -59,6 +66,13 @@ public class PlayerController : MonoBehaviour
             else if (!rotateRight && rotateLeft)
             {
                 TurnLeft();
+            }
+            else if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (currentRoom != null)
+                {
+                    currentRoom.OnRoomSearched();
+                }
             }
         }
         
@@ -125,15 +139,12 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider otherObject)
     {
-        Debug.Log("Enter");
+        currentRoom = otherObject.GetComponent<RoomBase>();
+        currentRoom.OnRoomEntered();
     }
-    private void OnTriggerStay(Collider other)
-    {
-        Debug.Log("stay");
-    }
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider otherObject)
     {
         Debug.Log("lev");
     }
