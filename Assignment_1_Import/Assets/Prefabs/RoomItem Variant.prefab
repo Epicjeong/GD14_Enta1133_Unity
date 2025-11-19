@@ -4411,6 +4411,11 @@ MonoBehaviour:
   EastEntry: {fileID: 4875226036701996930}
   SouthEntry: {fileID: 4122749195898022198}
   WestEntry: {fileID: 4399743761007438028}
+  north: {fileID: 0}
+  east: {fileID: 0}
+  south: {fileID: 0}
+  west: {fileID: 0}
+  hasVisited: 0
 --- !u!1 &4122749195898022198 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 992779882977023076, guid: 99c9720ab356a0642a771bea13969a05, type: 3}

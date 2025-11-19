@@ -13,13 +13,13 @@ public class GameManager : MonoBehaviour
     Computer computer;
     DiceRolls diceRoller;
     System.Random random;
+    [SerializeField] private Map gameMapPrefab;
+    [SerializeField] private PlayerController PlayerPrefab;
+    private Map gameMap;
+    private PlayerController playerController;
     //Keeps track of points
     int playerPoints = 0;
     int computerPoints = 0;
-    [SerializeField] private Map gameMapPrefab;
-    [SerializeField] private PlayerController PlayerPrefab; 
-    private Map gameMap;
-    private PlayerController playerController;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Start()
@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
         computer = new Computer();
         diceRoller = new DiceRolls();
 
-        UnityEngine.Debug.Log("oihdsfuhagh");
+        //Zeroes the game managers position
         transform.position = Vector3.zero;
         SetupMap();
         SpawnPlayer();
@@ -70,6 +70,7 @@ public class GameManager : MonoBehaviour
     //    Debug.Log("Goodbye");
     }
 
+    //Instantiates the map
     private void SetupMap()
     {
         gameMap = Instantiate(gameMapPrefab, transform);
@@ -77,12 +78,13 @@ public class GameManager : MonoBehaviour
         gameMap.MakeMap();
     }
 
+    //Instantiates player
     private void SpawnPlayer()
     {
-        Debug.Log(" a ");
+        //Gives player a random starting room
         var randomStartRoom = gameMap.layout[Random.Range(0, gameMap.roomPrefabs.Length), Random.Range(0, gameMap.roomPrefabs.Length)];
         playerController = Instantiate(PlayerPrefab, transform);
-        playerController.transform.position = new Vector3(randomStartRoom.transform.position.x, 13, randomStartRoom.transform.position.z);
+        playerController.transform.position = randomStartRoom.transform.position;
         playerController.Setup();
     }
 

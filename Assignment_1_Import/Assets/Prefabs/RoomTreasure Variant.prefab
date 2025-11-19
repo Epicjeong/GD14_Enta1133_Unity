@@ -1470,7 +1470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2422200667122195091, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
       propertyPath: m_SelectedEdges.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2422200667122195091, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
       propertyPath: m_Tangents.Array.data[0].x
@@ -2210,7 +2210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2422200667122195091, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
       propertyPath: m_SelectedVertices.Array.size
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2422200667122195091, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
       propertyPath: m_SelectedEdges.Array.data[0].a
@@ -3881,6 +3881,11 @@ MonoBehaviour:
   EastEntry: {fileID: 9218313578247502024}
   SouthEntry: {fileID: 392021624377243260}
   WestEntry: {fileID: 92685222706378630}
+  north: {fileID: 0}
+  east: {fileID: 0}
+  south: {fileID: 0}
+  west: {fileID: 0}
+  hasVisited: 0
 --- !u!1 &3842368258441837938 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4460103010945621866, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
