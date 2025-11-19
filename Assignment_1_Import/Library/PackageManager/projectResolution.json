@@ -9,6 +9,16 @@
     "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.55f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\BuiltInPackagesCombined.sha1"
   ],
   "outputs": {
+    "com.unity.ide.visualstudio@2.0.25": {
+      "name": "com.unity.ide.visualstudio",
+      "displayName": "Visual Studio Editor",
+      "resolvedPath": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Library\\PackageCache\\com.unity.ide.visualstudio@74aa435fc4bb",
+      "fingerprint": "74aa435fc4bb41890f400130ec80f271d1292fd4",
+      "editorCompatibility": "2021.3.0a1",
+      "version": "2.0.25",
+      "source": "registry",
+      "testable": false
+    },
     "com.unity.inputsystem@1.14.2": {
       "name": "com.unity.inputsystem",
       "displayName": "Input System",
@@ -331,6 +341,16 @@
       "source": "registry",
       "testable": false
     },
+    "com.unity.test-framework@1.5.1": {
+      "name": "com.unity.test-framework",
+      "displayName": "Test Framework",
+      "resolvedPath": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Library\\PackageCache\\com.unity.test-framework@dfdbd02f5918",
+      "fingerprint": "dfdbd02f59180baa5668370b8f71f6fbeaa3b032",
+      "editorCompatibility": "2022.3.0a1",
+      "version": "1.5.1",
+      "source": "builtin",
+      "testable": false
+    },
     "com.unity.render-pipelines.core@17.0.4": {
       "name": "com.unity.render-pipelines.core",
       "displayName": "Scriptable Render Pipeline Core",
@@ -349,6 +369,16 @@
       "editorCompatibility": "2019.1.0a1",
       "version": "4.9.3",
       "source": "registry",
+      "testable": false
+    },
+    "com.unity.ext.nunit@2.0.5": {
+      "name": "com.unity.ext.nunit",
+      "displayName": "Custom NUnit",
+      "resolvedPath": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Library\\PackageCache\\com.unity.ext.nunit@031a54704bff",
+      "fingerprint": "031a54704bffe39e6a0324909f8eaa4565bdebf2",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "2.0.5",
+      "source": "builtin",
       "testable": false
     },
     "com.unity.burst@1.8.23": {
@@ -401,16 +431,6 @@
       "source": "builtin",
       "testable": false
     },
-    "com.unity.test-framework@1.5.1": {
-      "name": "com.unity.test-framework",
-      "displayName": "Test Framework",
-      "resolvedPath": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Library\\PackageCache\\com.unity.test-framework@dfdbd02f5918",
-      "fingerprint": "dfdbd02f59180baa5668370b8f71f6fbeaa3b032",
-      "editorCompatibility": "2022.3.0a1",
-      "version": "1.5.1",
-      "source": "builtin",
-      "testable": false
-    },
     "com.unity.nuget.mono-cecil@1.11.4": {
       "name": "com.unity.nuget.mono-cecil",
       "displayName": "Mono Cecil",
@@ -429,16 +449,6 @@
       "editorCompatibility": "2020.3.0a1",
       "version": "3.1.0",
       "source": "registry",
-      "testable": false
-    },
-    "com.unity.ext.nunit@2.0.5": {
-      "name": "com.unity.ext.nunit",
-      "displayName": "Custom NUnit",
-      "resolvedPath": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Library\\PackageCache\\com.unity.ext.nunit@031a54704bff",
-      "fingerprint": "031a54704bffe39e6a0324909f8eaa4565bdebf2",
-      "editorCompatibility": "2019.4.0a1",
-      "version": "2.0.5",
-      "source": "builtin",
       "testable": false
     }
   }
