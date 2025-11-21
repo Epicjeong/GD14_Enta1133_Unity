@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638986797530895686
-    m_Hash: 2280265704
+      ticks: 638992805656193395
+    m_Hash: 2726221736
   m_LockFileStatus:
     m_FilePath: C:/1133/GD14_Enta1133_Unity/Assignment_1_Import/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638986797530957847
-    m_Hash: 3353413660
+      ticks: 638992805656253996
+    m_Hash: 1421593636
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:

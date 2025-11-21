@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     DiceRolls diceRoller;
     System.Random random;
     [SerializeField] private Map gameMapPrefab;
-    [SerializeField] private PlayerController PlayerPrefab;
+    [SerializeField] private PlayerController playerPrefab;
     private Map gameMap;
     private PlayerController playerController;
     //Keeps track of points
@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
     {
         //Gives player a random starting room
         var randomStartRoom = gameMap.layout[Random.Range(0, gameMap.roomPrefabs.Length), Random.Range(0, gameMap.roomPrefabs.Length)];
-        playerController = Instantiate(PlayerPrefab, transform);
+        playerController = Instantiate(playerPrefab, transform);
         playerController.transform.position = randomStartRoom.transform.position;
         playerController.Setup();
     }
