@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
                 SetFacingDirection();
             }
         }
-        else
+        else if (!isRotating && !isMoving)
         {
             //Inputs for left and right
             //The reason they are reversed is because the players movement would also be reversed
@@ -222,13 +222,13 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter(Collider otherObject)
     {
         currentRoom = otherObject.GetComponent<RoomBase>();
-        currentRoom.OnRoomEntered();
+        //currentRoom.OnRoomEntered();
     }
     //Whem leaving a room
     private void OnTriggerExit(Collider otherObject)
     {
         RoomBase exitingRoom = otherObject.GetComponent<RoomBase>();
-        exitingRoom.OnRoomExit();
+        //exitingRoom.OnRoomExit();
     }
 
 }
