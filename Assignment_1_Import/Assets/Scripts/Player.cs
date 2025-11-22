@@ -5,7 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using TMPro;
 using Random = System.Random;
+using UnityEngine.UI;
 
 namespace GD14_1133_DiceGame_Jeong_Yuri
 {
@@ -14,7 +16,7 @@ namespace GD14_1133_DiceGame_Jeong_Yuri
     /// Proceeds through the players turn
     /// Stores some player specific values
     /// </summary>
-    internal class Player
+    public class Player : MonoBehaviour
     {
         //The number of sides the player starts with
         int startingSides;
@@ -23,16 +25,18 @@ namespace GD14_1133_DiceGame_Jeong_Yuri
         //The value of what the player has collected
         private int playerScore;
         //The pickaxes durability
-        private int playerSidesLeft;
+        [SerializeField] private int playerSidesLeft;
         //The durability restored by items
         int durabilityRestored;
         //The value you have obtained from gems
         int valueFromGems;
         //Egg
         int hasEgg;
+        //The instance of the slider
+        private DurabilitySlider durabilitySlider;
 
         //Sets the amount of durability the player starts with
-        internal void SetPlayerSides()
+        public void SetPlayerSides()
         {
             //The inventory is reset here as the player would need to set the durability at the start of the loop anyways
             inventory["Duct tape"] = 0;
@@ -42,16 +46,8 @@ namespace GD14_1133_DiceGame_Jeong_Yuri
             valueFromGems = 0;
             hasEgg = 0;
             startingSides = 0;
-
-            while (startingSides < 30)
-            {
-                int.TryParse(Console.ReadLine(), out startingSides);
-                if (startingSides < 30)
-                {
-                    Debug.Log("Please input a valid option");
-                }
-            }
-            playerSidesLeft = startingSides;
+            playerSidesLeft = durabilitySlider.SliderChange();
+            Debug.Log("Your starting durability is " +  playerSidesLeft);
         }
 
         //The players turn
@@ -110,11 +106,11 @@ namespace GD14_1133_DiceGame_Jeong_Yuri
                 //Gems adds more to total value of rocks
                 Debug.Log("You got a gem, which adds to your total rock value");
                 inventory["Gem"]++;
-                Gem gem = new Gem();
-                gem.ItemAction(player, random, diceroller, map);
-                Debug.Log("The gem was worth " + gem.gemValue);
-                valueFromGems = valueFromGems + gem.gemValue;
-                Debug.Log("You now have " + valueFromGems + " value from gems");
+                //Gem gem = new Gem();
+                //gem.ItemAction(player, random, diceroller, map);
+                //Debug.Log("The gem was worth " + gem.gemValue);
+                //valueFromGems = valueFromGems + gem.gemValue;
+                //Debug.Log("You now have " + valueFromGems + " value from gems");
                 Debug.Log("You now have " + inventory["Gem"] + " gem");
             }
             else if (randomItem == 4)

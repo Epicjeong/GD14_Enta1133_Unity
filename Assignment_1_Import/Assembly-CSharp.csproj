@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\TreasureRoom.cs" />
     <Compile Include="Assets\Scripts\RoomBase.cs" />
     <Compile Include="Assets\Scripts\ItemRoom.cs" />
+    <Compile Include="Assets\Scripts\DurabilitySlider.cs" />
     <Compile Include="Assets\Scripts\Map.cs" />
     <Compile Include="Assets\Scripts\DiceRolls.cs" />
     <Compile Include="Assets\Scripts\Gem.cs" />
