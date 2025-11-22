@@ -19,9 +19,6 @@ public class MainMenu : MonoBehaviour
 
     public void OnClick()
     {
-        gameManager = Instantiate(gameManagerPrefab, transform);
-        gameManager.transform.position = Vector3.zero;
-        Debug.Log("Lizard");
-        gameObject.SetActive(false);
+        Application.Quit();
     }
 }
