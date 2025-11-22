@@ -18,14 +18,12 @@ namespace GD14_1133_DiceGame_Jeong_Yuri
     /// </summary>
     public class Player : MonoBehaviour
     {
-        //The number of sides the player starts with
-        int startingSides;
         //The number the player rolled
         private int playerRoll;
         //The value of what the player has collected
         private int playerScore;
         //The pickaxes durability
-        [SerializeField] private int playerSidesLeft;
+        public int playerSidesLeft;
         //The durability restored by items
         int durabilityRestored;
         //The value you have obtained from gems
@@ -45,8 +43,6 @@ namespace GD14_1133_DiceGame_Jeong_Yuri
             inventory["Magnifying glass"] = 0;
             valueFromGems = 0;
             hasEgg = 0;
-            startingSides = 0;
-            playerSidesLeft = durabilitySlider.SliderChange();
             Debug.Log("Your starting durability is " +  playerSidesLeft);
         }
 

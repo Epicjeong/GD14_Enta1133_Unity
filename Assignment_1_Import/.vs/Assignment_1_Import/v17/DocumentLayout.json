@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|c:\\1133\\gd14_enta1133_unity\\assignment_1_import\\assets\\scripts\\durabilityslider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\durabilityslider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|c:\\1133\\gd14_enta1133_unity\\assignment_1_import\\assets\\scripts\\durabilityslider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\durabilityslider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF2C4865-B02B-C1B5-8D43-308059B7CF0B}|Assembly-CSharp.csproj|C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\assets\\scripts\\dicerolls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,26 +58,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DurabilitySlider.cs",
               "DocumentMoniker": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\DurabilitySlider.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DurabilitySlider.cs",
               "ToolTip": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\DurabilitySlider.cs",
               "RelativeToolTip": "Assets\\Scripts\\DurabilitySlider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-21T09:00:31.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
               "ToolTip": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\Player.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAC8AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAqwEgAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-15T02:22:59.933Z",
               "EditorCaption": ""
@@ -92,8 +92,7 @@
               "RelativeToolTip": "Assets\\Scripts\\ItemRoom.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T01:24:31.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T01:24:31.21Z"
             },
             {
               "$type": "Document",
@@ -105,8 +104,7 @@
               "RelativeToolTip": "Assets\\Scripts\\TreasureRoom.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T01:24:29.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T01:24:29.188Z"
             },
             {
               "$type": "Document",
@@ -118,8 +116,7 @@
               "RelativeToolTip": "Assets\\Scripts\\RoomBase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T00:28:43.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T00:28:43.539Z"
             },
             {
               "$type": "Document",
@@ -131,18 +128,17 @@
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T01:27:13.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T01:27:13.174Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
               "ToolTip": "C:\\1133\\GD14_Enta1133_Unity\\Assignment_1_Import\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAAM4AAAAAAAAAAADwv98AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAA4wFUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T01:16:21.708Z",
               "EditorCaption": ""
@@ -157,8 +153,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Map.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAALEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T01:16:14.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T01:16:14.19Z"
             },
             {
               "$type": "Document",
@@ -170,8 +165,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameRunner.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T21:51:26.307Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T21:51:26.307Z"
             },
             {
               "$type": "Document",
@@ -183,8 +177,7 @@
               "RelativeToolTip": "Assets\\Scripts\\DiceRolls.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T21:31:14.595Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T21:31:14.595Z"
             }
           ]
         }

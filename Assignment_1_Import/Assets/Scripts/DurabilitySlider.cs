@@ -1,32 +1,27 @@
 using GD14_1133_DiceGame_Jeong_Yuri.Scripts;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 using GD14_1133_DiceGame_Jeong_Yuri;
 
 public class DurabilitySlider : MonoBehaviour
 {
     //The slider that chooses the starting durability
-    Slider slider;
+    [SerializeField] private Slider slider;
     private int sliderValue;
     //public TextMeshProUGUI startingDura;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //slider = GetComponent<TextMeshPro>();
+
     }
 
     //Shows the player what durability they would start with
-    public void SliderUpdate()
-    {
-        //startingDura = (int)slider.value;
-    }
-
-    //Sets the amount of durability the player starts with
-    internal int SliderChange()
+    public void SliderUpdate(Player player)
     {
         sliderValue = (int)slider.value;
-        return sliderValue;
+        player.playerSidesLeft = sliderValue;
+        Debug.Log(sliderValue);
     }
 }
