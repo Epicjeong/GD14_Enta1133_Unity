@@ -10,6 +10,7 @@ public class DurabilitySlider : MonoBehaviour
     [SerializeField] private Slider slider;
     private int sliderValue;
     public TextMeshProUGUI startingDura;
+    public TextMeshProUGUI displayDura;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,6 +23,7 @@ public class DurabilitySlider : MonoBehaviour
     {
         sliderValue = (int)slider.value;
         startingDura.text = sliderValue.ToString();
+        displayDura.text = "Durability: " + sliderValue.ToString();
         player.playerSidesLeft = sliderValue;
         Debug.Log(sliderValue);
     }
