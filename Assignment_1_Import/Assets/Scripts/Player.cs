@@ -30,9 +30,13 @@ namespace GD14_1133_DiceGame_Jeong_Yuri
         int valueFromGems;
         //Egg
         int hasEgg;
-        //The instance of the slider
-        private DurabilitySlider durabilitySlider;
 
+        private TextMeshProUGUI displayDura;
+
+        private void Start()
+        {
+            displayDura = GetComponent<TextMeshProUGUI>();
+        }
         //Sets the amount of durability the player starts with
         public void SetPlayerSides()
         {
@@ -43,31 +47,28 @@ namespace GD14_1133_DiceGame_Jeong_Yuri
             inventory["Magnifying glass"] = 0;
             valueFromGems = 0;
             hasEgg = 0;
-            Debug.Log("Your starting durability is " +  playerSidesLeft);
         }
 
         //The players turn
-        //internal void PlayerTurn(Player player, DiceRolls diceroller, ScoreKeeper scoreKeep, EndGame endGame, Map map)
-        //{
-        //    //Starts the dice roller aslong as you have durability left
-        //    if ( playerSidesLeft == 0)
-        //    {
-        //        Debug.Log("As you are out of durability, you will now exit the mine");
-        //        playerRoll = 0;
-        //        endGame.PlayerWin(player, scoreKeep, map);
-        //    }
-        //    else
-        //    {
-        //        diceroller.RollDice(player);
-        //        playerRoll = diceroller.GetDiceResult();
-        //        int sidesUsed = diceroller.GetSidesUsed();
-        //        playerSidesLeft = playerSidesLeft - sidesUsed;
-        //        Debug.Log("You used " + sidesUsed + " of your durability, your pickaxe has " + playerSidesLeft + " more durability");
-        //        //Puts breaks every now and again so the player has time to read
-        //        Debug.Log("Press enter to continue");
-        //        Console.ReadLine();
-        //    }
-        //}
+        internal void PlayerTurn(Player player, DiceRolls diceroller, Random random)
+        {
+            //Starts the dice roller aslong as you have durability left
+            if (playerSidesLeft == 0)
+            {
+                //Debug.Log("As you are out of durability, you will now exit the mine");
+                //playerRoll = 0;
+                //endGame.PlayerWin(player, scoreKeep, map);
+            }
+            else
+            {
+                diceroller.RollDice(random);
+                playerRoll = diceroller.GetDiceResult();
+                int sidesUsed = playerRoll;
+                playerSidesLeft = playerSidesLeft - sidesUsed;
+                Debug.Log("You used " + sidesUsed + " of your durability, your pickaxe has " + playerSidesLeft + " more durability");
+                //Puts breaks every now and again so the player has time to read
+            }
+        }
 
         //Keeps track of what items have been obtained
         Dictionary<string, int> inventory = new Dictionary<string, int>
@@ -79,7 +80,7 @@ namespace GD14_1133_DiceGame_Jeong_Yuri
         };
 
         //Obtains items
-        internal void GainItems(Player player, Random random, DiceRolls diceroller,  Map map)
+        internal void GainItems(Player player, Random random, DiceRolls diceroller, Map map)
         {
             //Randomizes which items are gained
             int randomItem = random.Next(1, 4);

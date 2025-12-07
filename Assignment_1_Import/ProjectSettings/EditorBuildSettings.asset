@@ -4,7 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainGame.unity
+    guid: 1d92bef9414917c498740f4af7674a80
+  - enabled: 1
+    path: Assets/Scenes/ItemRoom.unity
+    guid: f3485da9a4839254983afee955fd1e60
+  - enabled: 1
+    path: Assets/Scenes/MineRoom.unity
+    guid: 10e914d145598d2499430967aacbd7b5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0

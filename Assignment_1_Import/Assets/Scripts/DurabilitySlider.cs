@@ -25,6 +25,5 @@ public class DurabilitySlider : MonoBehaviour
         startingDura.text = sliderValue.ToString();
         displayDura.text = "Durability: " + sliderValue.ToString();
         player.playerSidesLeft = sliderValue;
-        Debug.Log(sliderValue);
     }
 }

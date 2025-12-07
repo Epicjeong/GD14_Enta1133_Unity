@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Setup()
     {
+        DontDestroyOnLoad(gameObject);
         //Array of the directions
         Direction[] directions = new Direction[] { Direction.North, Direction.East, Direction.South, Direction.West };
         //Faces the player a random direction

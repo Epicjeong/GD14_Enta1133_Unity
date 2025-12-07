@@ -33,41 +33,7 @@ public class GameManager : MonoBehaviour
         transform.position = Vector3.zero;
         SetupMap();
         SpawnPlayer();
-
-    //    //Welcomes the player and creates and the instance of the player's class, which asks the players name
-    //    Debug.Log("Welcome, I am Yuri Jeong writing this at September 23, 2025. I would ask your name, but I cant do that at the moment");
-    //    player.PlayerTurn(diceRoller, random);
-
-    //    //Starts the computer's turn and creates the instance of the computers class
-    //    Debug.Log("Now it is the computer's turn, who will also choose from the same dice you chose form");
-    //    computer.ComputerTurn(diceRoller, random);
-
-    //    //Compares the rolls of the player and the computer
-    //    int playerRoll = player.GetPlayerRoll();
-    //    int computerRoll = computer.GetComputerRoll();
-    //    //Player win
-    //    if (playerRoll > computerRoll)
-    //    {
-    //        Debug.Log("You rolled " + playerRoll + ", which is greater than " + computerRoll + ", which the computer rolled so you get a point");
-    //        playerPoints++;
-    //        Debug.Log("You now have " + playerPoints + " points");
-    //    }
-    //    //Computer win
-    //    if (playerRoll < computerRoll)
-    //    {
-    //        Debug.Log("The computer rolled " + computerRoll + ", which is greater than " + playerRoll + ", which you rolled so the computer gets a point");
-    //        computerPoints++;
-    //        Debug.Log("The computer now has " + computerPoints + " points");
-    //    }
-    //    //Tie
-    //    if (playerRoll == computerRoll)
-    //    {
-    //        Debug.Log("As it is a tie, no points will be awarded");
-    //    }
-
-    //    //Displays the current points
-    //    Debug.Log("The score is now " + playerPoints + " for you and " + computerPoints + " for the computer");
-    //    Debug.Log("Goodbye");
+        DontDestroyOnLoad(gameObject);
     }
 
     //Instantiates the map
@@ -86,11 +52,5 @@ public class GameManager : MonoBehaviour
         playerController = Instantiate(playerPrefab, transform);
         playerController.transform.position = randomStartRoom.transform.position;
         playerController.Setup();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
