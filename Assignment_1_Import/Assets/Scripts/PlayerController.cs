@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     private float movementTimer = 0.0f;
     private Vector3 previousPosition;
     private Vector3 moveToPosition;
+    public bool searching = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Setup()
@@ -90,11 +91,11 @@ public class PlayerController : MonoBehaviour
             bool rotateRight = Input.GetKeyDown(KeyCode.A);
             bool rotateLeft = Input.GetKeyDown(KeyCode.D);
             //Makes sure only one is true
-            if (rotateRight && !rotateLeft)
+            if (rotateRight && !rotateLeft && !searching)
             {
                 TurnRight();
             }
-            else if (!rotateRight && rotateLeft)
+            else if (!rotateRight && rotateLeft && !searching)
             {
                 TurnLeft();
             }
@@ -104,10 +105,11 @@ public class PlayerController : MonoBehaviour
                 if (currentRoom != null)
                 {
                     currentRoom.OnRoomSearched();
+                    searching = true;
                 }
             }
             //Moves the player
-            else if (Input.GetKeyDown (KeyCode.W))
+            else if (Input.GetKeyDown (KeyCode.W) && !searching)
             {
                 //Prevents moving into a room that doesnt exist
                 RoomBase roomInFacingDirection = NextRoomInDirection();

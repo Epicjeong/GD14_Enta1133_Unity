@@ -1,6 +1,7 @@
 using GD14_1133_DiceGame_Jeong_Yuri;
 using GD14_1133_DiceGame_Jeong_Yuri.Scripts;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = System.Random;
 
 public class TreasureRoom : RoomBase
@@ -39,8 +40,11 @@ public class TreasureRoom : RoomBase
     //When the room is searched
     internal override void OnRoomSearched()
     {
-        Debug.Log("There is a rock here");
-        Debug.Log("Sadly, you cannot mine it yet");
+        if (!hasVisited)
+        {
+            SceneManager.LoadScene("MineRoom");
+        }
+
     }
     //When the room is exited
     internal override void OnRoomExit()

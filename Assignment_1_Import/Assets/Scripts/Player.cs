@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using TMPro;
-using Random = System.Random;
+using Random = UnityEngine.Random;
 using UnityEngine.UI;
 
 namespace GD14_1133_DiceGame_Jeong_Yuri
@@ -30,44 +30,36 @@ namespace GD14_1133_DiceGame_Jeong_Yuri
         int valueFromGems;
         //Egg
         int hasEgg;
-        //The instance of the slider
-        private DurabilitySlider durabilitySlider;
+        //The item the player gets from item rooms
+        int itemGained;
 
-        //Sets the amount of durability the player starts with
-        public void SetPlayerSides()
+        private TextMeshProUGUI displayDura;
+
+        private void Start()
         {
-            //The inventory is reset here as the player would need to set the durability at the start of the loop anyways
-            inventory["Duct tape"] = 0;
-            inventory["Weird glue"] = 0;
-            inventory["Gem"] = 0;
-            inventory["Magnifying glass"] = 0;
-            valueFromGems = 0;
-            hasEgg = 0;
-            Debug.Log("Your starting durability is " +  playerSidesLeft);
+            displayDura = GetComponent<TextMeshProUGUI>();
         }
 
         //The players turn
-        //internal void PlayerTurn(Player player, DiceRolls diceroller, ScoreKeeper scoreKeep, EndGame endGame, Map map)
-        //{
-        //    //Starts the dice roller aslong as you have durability left
-        //    if ( playerSidesLeft == 0)
-        //    {
-        //        Debug.Log("As you are out of durability, you will now exit the mine");
-        //        playerRoll = 0;
-        //        endGame.PlayerWin(player, scoreKeep, map);
-        //    }
-        //    else
-        //    {
-        //        diceroller.RollDice(player);
-        //        playerRoll = diceroller.GetDiceResult();
-        //        int sidesUsed = diceroller.GetSidesUsed();
-        //        playerSidesLeft = playerSidesLeft - sidesUsed;
-        //        Debug.Log("You used " + sidesUsed + " of your durability, your pickaxe has " + playerSidesLeft + " more durability");
-        //        //Puts breaks every now and again so the player has time to read
-        //        Debug.Log("Press enter to continue");
-        //        Console.ReadLine();
-        //    }
-        //}
+        internal void PlayerTurn(Player player, DiceRolls diceroller, System.Random random)
+        {
+            //Starts the dice roller aslong as you have durability left
+            if (playerSidesLeft == 0)
+            {
+                //Debug.Log("As you are out of durability, you will now exit the mine");
+                //playerRoll = 0;
+                //endGame.PlayerWin(player, scoreKeep, map);
+            }
+            else
+            {
+                diceroller.RollDice(random);
+                playerRoll = diceroller.GetDiceResult();
+                int sidesUsed = playerRoll;
+                playerSidesLeft = playerSidesLeft - sidesUsed;
+                Debug.Log("You used " + sidesUsed + " of your durability, your pickaxe has " + playerSidesLeft + " more durability");
+                //Puts breaks every now and again so the player has time to read
+            }
+        }
 
         //Keeps track of what items have been obtained
         Dictionary<string, int> inventory = new Dictionary<string, int>
@@ -79,37 +71,29 @@ namespace GD14_1133_DiceGame_Jeong_Yuri
         };
 
         //Obtains items
-        internal void GainItems(Player player, Random random, DiceRolls diceroller,  Map map)
+        internal void GainItems(Player player)
         {
             //Randomizes which items are gained
-            int randomItem = random.Next(1, 4);
-            if (randomItem == 1)
+            itemGained = Random.Range(1, 4);
+            if (itemGained == 1)
             {
                 //Duct tape heals durability
-                Debug.Log("You got duct tape, it can restore some of your pickaxes durability");
                 inventory["Duct tape"]++;
-                Debug.Log("You now have " + inventory["Duct tape"] + " duct tape");
             }
-            else if (randomItem == 2)
+            else if (itemGained == 2)
             {
                 //Weird glue heals durability but is more random
-                Debug.Log("You got weird glue, it can restore a more random of your pickaxes durability");
                 inventory["Weird glue"]++;
-                Debug.Log("You now have " + inventory["Weird glue"] + " weird glue");
             }
-            else if (randomItem == 3)
+            else if (itemGained == 3)
             {
                 //Gems adds more to total value of rocks
-                Debug.Log("You got a gem, which adds to your total rock value");
                 inventory["Gem"]++;
-                //Gem gem = new Gem();
-                //gem.ItemAction(player, random, diceroller, map);
-                //Debug.Log("The gem was worth " + gem.gemValue);
-                //valueFromGems = valueFromGems + gem.gemValue;
-                //Debug.Log("You now have " + valueFromGems + " value from gems");
-                Debug.Log("You now have " + inventory["Gem"] + " gem");
+                Gem gem = new Gem();
+                //gem.ItemAction(player);
+                valueFromGems = valueFromGems + gem.gemValue;
             }
-            else if (randomItem == 4)
+            else if (itemGained == 4)
             {
                 //Magnifying glass resets a room as if it has not been used
                 Debug.Log("You got a magnifying glass, which finds more items or rocks depending on the room");
@@ -122,15 +106,6 @@ namespace GD14_1133_DiceGame_Jeong_Yuri
         //internal void UseInventory(Player player, Rock rock, Random random, DiceRolls diceroller, ScoreKeeper scoreKeep, EndGame endGame, Map map)
         //{
         //    int inventoryChoice;
-        //    Debug.Log("You currently have " + inventory["Duct tape"] + " duct tape, " + inventory["Weird glue"] + " weird glue and " + inventory["Magnifying glass"] + " magnifying glass");
-        //    Debug.Log("You have " + inventory["Gem"] + " gem that add to $" + valueFromGems + " in additional value");
-        //    Debug.Log("Press 1 to use duct tape (if any), 2 for weird glue (if any) and anything else to exit inventory");
-        //    //This prevents using the magnifying glass while mining and the pandoras box that would open
-        //    if (rock.GetRockHealth() <= 0)
-        //    {
-        //        Debug.Log("Or if you have a magnifying glass and not currently mining, press 3 to use a magnifying glass");
-        //    }
-        //    int.TryParse(Console.ReadLine(), out inventoryChoice);
         //    if (inventory["Duct tape"] > 0 || inventory["Weird glue"] > 0)
         //    {
         //        //Use duct tape
@@ -197,6 +172,10 @@ namespace GD14_1133_DiceGame_Jeong_Yuri
         {
             hasEgg = 1;
             return hasEgg;
+        }
+        internal int GetItemGained()
+        {
+            return itemGained;
         }
     }
 }

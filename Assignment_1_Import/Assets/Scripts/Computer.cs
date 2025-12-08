@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace GD14_1133_DiceGame_Jeong_Yuri
 {
-    internal class Computer
+    internal class Computer : MonoBehaviour
     {
         //Keeps track of the computer's dice rolls and the total of all dice rolls
         private int computerRoll;

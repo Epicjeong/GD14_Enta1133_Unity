@@ -3,6 +3,7 @@ using GD14_1133_DiceGame_Jeong_Yuri.Scripts;
 using System;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = System.Random;
 
 public class ItemRoom : RoomBase
@@ -35,14 +36,20 @@ public class ItemRoom : RoomBase
     //When the room is entered
     internal override void OnRoomEntered()
     {
-        hasVisited = true;
+        //hasVisited = true;
         RoomDescription();
     }
     //When the room is searched
     internal override void OnRoomSearched()
     {
-        Debug.Log("There are some items laying around");
-        Debug.Log("Sadly, you cant pick them up yet");
+        if (!hasVisited)
+        {
+            SceneManager.LoadScene("ItemRoom");
+        }
+        else
+        {
+            
+        }
     }
     //When the room is exited
     internal override void OnRoomExit()
