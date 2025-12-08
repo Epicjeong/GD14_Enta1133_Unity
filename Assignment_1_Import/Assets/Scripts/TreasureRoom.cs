@@ -40,8 +40,10 @@ public class TreasureRoom : RoomBase
     //When the room is searched
     internal override void OnRoomSearched()
     {
-        Debug.Log("There is a rock here");
-        SceneManager.LoadScene("TreasureRoom");
+        if (!hasVisited)
+        {
+            SceneManager.LoadScene("MineRoom");
+        }
 
     }
     //When the room is exited

@@ -42,8 +42,14 @@ public class ItemRoom : RoomBase
     //When the room is searched
     internal override void OnRoomSearched()
     {
-        Debug.Log("There are some items laying around");
-        SceneManager.LoadScene("ItemRoom");
+        if (!hasVisited)
+        {
+            SceneManager.LoadScene("ItemRoom");
+        }
+        else
+        {
+            
+        }
     }
     //When the room is exited
     internal override void OnRoomExit()
